@@ -11,7 +11,7 @@
 
 ### receive(on:), subscribe(on:) 안쓴 경우 스레드 확인
 - DispatchQueue.global()로 실행한 경우, main thread가 아닌 global thread에서 sink의 클로저 부분이 동작
-- 즉, 따로 스케줄러 설정을 하지 않으면 subject의 이벤트를 발행하는 쪽의 스케줄러와 동일하기 sink 클로저 부분이 동작
+- 즉, 따로 스케줄러 설정을 하지 않으면 subject의 이벤트를 발행하는 쪽의 스케줄러와 동일하게 sink 클로저 부분이 동작
 
 ```Swift
 let subject = PassthroughSubject<Void, Never>()
