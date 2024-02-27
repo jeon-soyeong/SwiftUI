@@ -79,7 +79,7 @@ let cancellable = Just(1)
 ```
 <br/>
 
-## subscribe(on:) vs recevie(on:)
+## subscribe(on:) vs receive(on:)
 ### subscribe(on:)
 - subject 일경우 
 send 하는 곳의 thread를 탐(main이었으면 main으로), 하지만 이 내부의 subscribe, request, cancel은 global로 했으면 global에서 작업함<br/>
