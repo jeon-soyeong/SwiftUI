@@ -7,7 +7,7 @@
 ## Scheduler 사용 방법
 ### 스레드 변경
 - receive(on:): downstream의 스레드 변경 -> publisher로 부터 element를 수신할 scheduler를 지정하는 역할
-- subscribe(on:): upstream의 스레드 변경
+- subscribe(on:): upstream의 스레드 변경 ->  subscribe, cancel, request operation을 수행 할 scheduler를 지정하는 역할
 
 ### receive(on:), subscribe(on:) 안쓴 경우 스레드 확인
 - DispatchQueue.global()로 실행한 경우, main thread가 아닌 global thread에서 sink의 클로저 부분이 동작
