@@ -6,7 +6,7 @@
 
 ## Scheduler 사용 방법
 ### 스레드 변경
-- receive(on:): downstream의 스레드 변경
+- receive(on:): downstream의 스레드 변경 -> publisher로 부터 element를 수신할 scheduler를 지정하는 역할
 - subscribe(on:): upstream의 스레드 변경
 
 ### receive(on:), subscribe(on:) 안쓴 경우 스레드 확인
