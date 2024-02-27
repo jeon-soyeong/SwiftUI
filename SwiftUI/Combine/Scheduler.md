@@ -31,7 +31,7 @@ DispatchQueue.global().async {
 */
 ```
 
-### recevie(on:) - downstream에 적용
+### receive(on:) - downstream에 적용
 ```Swift
 let subject = PassthroughSubject<Void, Never>()
 
