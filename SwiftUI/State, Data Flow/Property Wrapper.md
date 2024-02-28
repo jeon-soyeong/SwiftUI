@@ -29,7 +29,7 @@ change value? = 1
 - 이 프로토콜을 준수하면, Observable 인스턴스(이벤트를 방출할 수 있는)라는 의미
 - objectWillChange 프로퍼티 사용이 가능
 - 이 프로퍼티를 이용하여 내부에서 변경되었을 때 willSet안에서 objectWillChange.send()를 호출하여 알림
-- 구독하는 쪽에서는 objectWillChange.sink { } 로 이벤트를 받아서 사용
+- 구독하는 쪽에서는 objectWillChange.sink { } 로 이벤트를 받아서 사용함
 ```Swift
 final class MyData: ObservableObject {
   var number: Int {
